@@ -1,0 +1,6 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/_global-error/page": "app/_global-error/page.js",
+  "/build/intermediates/assets/debug/mergeDebugAssets/public/icon.svg/route": "app/build/intermediates/assets/debug/mergeDebugAssets/public/icon.svg/route.js",
+  "/src/main/assets/public/icon.svg/route": "app/src/main/assets/public/icon.svg/route.js"
+}

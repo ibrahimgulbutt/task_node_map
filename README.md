@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Node Mind
 
-## Getting Started
+Node Mind is a comprehensive productivity application that seamlessly blends task management, visual brainstorming (mind mapping), and focus tools into a single mobile-first experience. Built with modern web technologies and wrapped for native mobile performance.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 1. Task Management
+- **Daily Dashboard:** View your daily progress at a glance.
+- **Task Creation:** Add tasks with titles, descriptions, priorities, and dates.
+- **Organization:** Filter tasks by date and status.
+- **Progress Tracking:** Visual progress bars and completion stats.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Mind Mapping
+- **Visual Canvas:** Create infinite mind maps using a powerful node-based interface.
+- **Interactive Nodes:** Drag and drop nodes, edit titles and content.
+- **Connections:** Create relationships between ideas with intuitive edge connections.
+- **Map Management:** Organize multiple mind maps for different projects or subjects.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Focus Timer
+- **Focus Sessions:** Built-in timer to help you stay productive.
+- **Session Tracking:** Track your focus history and duration.
+- **Customizable:** Adjust focus durations in settings.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 4. Mobile First Design
+- **Native Feel:** Built with Ionic Framework for platform-specific UI/UX.
+- **Dark Mode:** Sleek, battery-saving dark theme by default.
+- **Touch Optimized:** Large touch targets and gesture support.
 
-## Learn More
+## 🛠 Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Framework:** [Next.js 16](https://nextjs.org/) (App Router)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **UI Components:** [Ionic Framework](https://ionicframework.com/docs/react)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **State Management:** [Zustand](https://github.com/pmndrs/zustand)
+- **Diagramming:** [React Flow](https://reactflow.dev/)
+- **Mobile Runtime:** [Capacitor](https://capacitorjs.com/)
+- **Icons:** [Ionicons](https://ionic.io/ionicons)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📱 Getting Started
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Prerequisites
+- Node.js (v18 or higher)
+- npm or yarn
+- Android Studio (for Android deployment)
 
-## Deploy on Vercel
+### Installation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd node-mind
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server**
+   ```bash
+   npm run dev
+   ```
+   Open [http://localhost:3000](http://localhost:3000) with your browser.
+
+### Mobile Deployment (Android)
+
+1. **Build the web assets**
+   ```bash
+   npm run build
+   ```
+
+2. **Sync with Capacitor**
+   ```bash
+   npx cap sync
+   ```
+
+3. **Run on Android Device**
+   You can either open Android Studio:
+   ```bash
+   npx cap open android
+   ```
+   Or build and install via command line (requires Gradle):
+   ```bash
+   cd android
+   ./gradlew installDebug
+   ```
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is licensed under the MIT License.

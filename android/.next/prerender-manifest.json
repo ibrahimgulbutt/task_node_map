@@ -1,0 +1,119 @@
+{
+  "version": 4,
+  "routes": {
+    "/_global-error": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/_global-error",
+      "dataRoute": "/_global-error.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/_not-found": {
+      "initialStatus": 404,
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/_not-found",
+      "dataRoute": "/_not-found.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/build/intermediates/assets/debug/mergeDebugAssets/public/icon.svg": {
+      "initialHeaders": {
+        "cache-control": "public, max-age=0, must-revalidate",
+        "content-type": "image/svg+xml",
+        "x-next-cache-tags": "_N_T_/layout,_N_T_/build/layout,_N_T_/build/intermediates/layout,_N_T_/build/intermediates/assets/layout,_N_T_/build/intermediates/assets/debug/layout,_N_T_/build/intermediates/assets/debug/mergeDebugAssets/layout,_N_T_/build/intermediates/assets/debug/mergeDebugAssets/public/layout,_N_T_/build/intermediates/assets/debug/mergeDebugAssets/public/icon.svg/layout,_N_T_/build/intermediates/assets/debug/mergeDebugAssets/public/icon.svg/route,_N_T_/build/intermediates/assets/debug/mergeDebugAssets/public/icon.svg"
+      },
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/build/intermediates/assets/debug/mergeDebugAssets/public/icon.svg",
+      "dataRoute": null,
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/src/main/assets/public/icon.svg": {
+      "initialHeaders": {
+        "cache-control": "public, max-age=0, must-revalidate",
+        "content-type": "image/svg+xml",
+        "x-next-cache-tags": "_N_T_/layout,_N_T_/src/layout,_N_T_/src/main/layout,_N_T_/src/main/assets/layout,_N_T_/src/main/assets/public/layout,_N_T_/src/main/assets/public/icon.svg/layout,_N_T_/src/main/assets/public/icon.svg/route,_N_T_/src/main/assets/public/icon.svg"
+      },
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/src/main/assets/public/icon.svg",
+      "dataRoute": null,
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    }
+  },
+  "dynamicRoutes": {},
+  "notFoundRoutes": [],
+  "preview": {
+    "previewModeId": "4e40aa0aef37dbb92a3275475f5bc089",
+    "previewModeSigningKey": "e329e8b64147604ecdeac48adf1f180224ac7db0e79a222f2ae19c142e3cf9d3",
+    "previewModeEncryptionKey": "29ef0b05b1f383a51e5dcdd8951e0636dcb0199225c07239e9c3497bf80b6e44"
+  }
+}

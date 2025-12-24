@@ -1,26 +1,163 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Default to Dark Blue Theme */
+  --background: #020617; /* Slate 950 - Very dark blue */
+  --foreground: #f8fafc; /* Slate 50 */
+  
+  --card-background: #1e293b; /* Slate 800 */
+  --card-foreground: #f1f5f9; /* Slate 100 */
+  
+  --primary: #3b82f6; /* Blue 500 */
+  --primary-foreground: #ffffff;
+  
+  --secondary: #1e293b; /* Slate 800 */
+  --secondary-foreground: #f8fafc;
+  
+  --muted: #334155; /* Slate 700 */
+  --muted-foreground: #94a3b8; /* Slate 400 */
+  
+  --accent: #1d4ed8; /* Blue 700 */
+  --accent-foreground: #ffffff;
+  
+  --border: #334155; /* Slate 700 */
+  --input: #1e293b;
+  --ring: #3b82f6;
+
+  /* Ionic Overrides for Dark Theme */
+  --ion-background-color: var(--background);
+  --ion-text-color: var(--foreground);
+  --ion-item-background: var(--card-background);
+  --ion-item-color: var(--foreground);
+  
+  /* Alert/Modal Specifics */
+  --ion-overlay-background-color: var(--card-background);
+  --ion-alert-background: var(--card-background);
+  --ion-alert-text-color: var(--foreground);
+  --ion-modal-background: var(--background);
+  --ion-toolbar-background: var(--background);
+  --ion-toolbar-color: var(--foreground);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-card: var(--card-background);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+/* Ionic Overrides for Dark Theme */
+:root {
+  --ion-background-color: var(--background);
+  --ion-text-color: var(--foreground);
+  --ion-toolbar-background: var(--background);
+  --ion-toolbar-color: var(--foreground);
+  --ion-item-background: var(--card-background);
+  --ion-item-color: var(--foreground);
+  --ion-card-background: var(--card-background);
+}
+
+/* Force Alert Radio Text Color */
+.alert-radio-label {
+  color: var(--foreground) !important;
+}
+.alert-title {
+  color: var(--foreground) !important;
+}
+.alert-message {
+  color: var(--muted-foreground) !important;
+}
+.alert-button {
+  color: var(--primary) !important;
+}
+
+/* Datetime & Picker Overrides */
+ion-datetime-button {
+  --color: var(--foreground);
+  background-color: var(--card-background);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+ion-datetime-button::part(native) {
+  background: var(--card-background) !important;
+  color: var(--foreground) !important;
+  box-shadow: none;
+  border: 1px solid var(--border);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Force the button inside to be transparent if it exists */
+ion-datetime-button button {
+  background: transparent !important;
+}
+
+/* Action Sheet Overrides */
+ion-action-sheet {
+  --background: var(--card-background);
+  --color: var(--foreground);
+  --button-color: var(--foreground);
+  --button-background: var(--card-background);
+  --button-background-selected: var(--muted);
+}
+
+.action-sheet-group {
+  background: var(--card-background) !important;
+}
+
+.action-sheet-button {
+  color: var(--foreground) !important;
+  background: var(--card-background) !important;
+  border-bottom: 1px solid var(--border);
+}
+
+.action-sheet-button.sc-ion-action-sheet-md {
+  color: var(--foreground);
+}
+
+.action-sheet-title {
+  color: var(--muted-foreground) !important;
+  background: var(--card-background) !important;
+}
+
+.action-sheet-cancel {
+  background: var(--card-background) !important;
+  color: var(--primary) !important;
+}
+
+ion-datetime {
+  --background: var(--card-background);
+  --background-rgb: 30, 41, 59;
+  --title-color: var(--foreground);
+  color: var(--foreground);
+}
+
+ion-modal {
+  --background: var(--background);
+  --ion-background-color: var(--background);
+}
+
+ion-content {
+  --background: var(--background);
 }
